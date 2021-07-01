@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+version '1.0-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = 'main.Main'
+
+dependencies {
+    testImplementation('junit:junit:4.13')
+    compile 'io.javalin:javalin:3.13.7'
+    compile 'org.thymeleaf:thymeleaf:3.0.12.RELEASE'
+    implementation 'org.slf4j:slf4j-simple:2.0.0-alpha1'
+}
